@@ -8,6 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class HeaderComponent {
   @Output() featureSelected = new EventEmitter<string>();
 
+  // tslint:disable-next-line:typedef
   onSelect(feature: string) {
     this.featureSelected.emit(feature);
   }
