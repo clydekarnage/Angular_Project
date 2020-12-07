@@ -11,13 +11,36 @@
 <div class="row">
   <div class="col-md-12">
     <div class="btn-group">
-      <button type="button" class="btn btn-primary dropdown-toggle">Manage Recipe <span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Add Ingredients to Shopping List</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
-      </ul>
+      <button
+        class="btn btn-primary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        appDropdown
+        #r=appDropDown
+      >
+        Manage Recipe
+      </button>
+      <div
+        [ngClass]="{'show':r.isOpen}"
+        class="dropdown-menu"
+        aria-labelledby="dropdownMenuButton"
+      >
+        <a
+          class="dropdown-item"
+          style="cursor: pointer;"
+          >One</a
+        >
+        <a
+          class="dropdown-item"
+          style="cursor: pointer;"
+          >Two</a
+        >
+      </div>
     </div>
+
   </div>
 </div>
 <div class="row">
