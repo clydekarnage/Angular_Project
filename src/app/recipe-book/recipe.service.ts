@@ -10,6 +10,7 @@ export class RecipeService {
     new Recipe('A Test Recipe Number 3', 'This is simply a test 2', 'https://i1.wp.com/www.eatthis.com/wp-content/uploads/2019/10/pumpkin-pad-thai-recipe.jpg?resize=640%2C360&ssl=1')
   ];
 
+  // tslint:disable-next-line: typedef
   getRecipes() {
     return this.recipes.slice();
   }
